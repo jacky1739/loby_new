@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/dist/css/all.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="logo">
+      <img src="./assets/dist/images/lobby/Lobby/平台svg/list_title_personal.svg" alt="">
+    </div>
+    <div class="backBtn">
+      <a href="#">
+        <img src="./assets/dist/images/lobby/Lobby/平台svg/btn_back_press.svg" alt="">
+      </a>
+    </div>
+  </nav>
+    <div class="main__box d-flex">
+      <ul class="menu">
+        <li class="menu__idBg">
+          <span><img class="menu__icon" src="./assets/dist/images/lobby/Lobby/平台svg/lobby_player_id_icon.svg" alt=""></span><p class="menu__id">ID12345678</p>
+        </li>
+        <li class="menu__betSearch">
+          <a href="#"><img src="./assets/dist/images/lobby/Lobby/平台svg/list_searchbet_normal.svg" alt=""></a>
+        </li>
+        <li class="menu__accountList">
+          <a href="#"><img src="./assets/dist/images/lobby/Lobby/平台svg/list_accountdetail_normal.svg" alt=""></a>
+        </li>
+      </ul>
+      <ul class="content">
+        <li class="content__btn__group">
+          <div class="d-flex">
+            <div class="content__betList1btn mr-2">
+              <a href="#">
+                <img src="./assets/dist/images/lobby/Lobby/平台svg/list_betdetail1_normal.svg" alt="">
+              </a>
+            </div>
+            <div class="content__betList2btn">
+              <a href="#">
+                <img src="./assets/dist/images/lobby/Lobby/平台svg/list_betdetail2_normal.svg" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="content__searchbtn">
+            <a href="#">
+              <img src="./assets/dist/images/lobby/Lobby/平台svg/list_search.svg" alt="">
+            </a>
+          </div>
+        </li>
+        <li class="search__group">
+          <p class="search__group__text">查詢時間：</p>
+          <div class="d-flex justify-content-space-between align-items-center">
+            <input type="text" id="datepicker1" placeholder="" style="
+              margin-right: calc(.01rem + 1.5vh);
+              width: calc(1rem + 5vh);
+              line-height: .4rem;
+              text-align: center;
+              background: black;
+              color: white;
+              font-size: .2rem;
+              border-radius: 7px;
+              border: 1.5px solid #856E8F;
+              cursor: pointer;">
+            <p class="search__group__text">～</p>
+            <input type="text" id="datepicker2" style="
+              margin-right: calc(.01rem + 1.5vh);
+              width: calc(1rem + 5vh);
+              line-height: .4rem;
+              text-align: center;
+              background: black;
+              color: white;
+              font-size: .2rem;
+              border-radius: 7px;
+              border: 1.5px solid #856E8F;
+              cursor: pointer;">
+            <select class="search__group__select" name="date" id="date_select">
+              <option value="本日">本日</option>
+              <option value="昨日">昨日</option>
+              <option value="本週">本週</option>
+              <option value="上週">上週</option>
+              <option value="本月">本月</option>
+              <option value="上月">上月</option>
+            </select>
+          </div>
+        <label class="search__group__text" for="game_select">遊戲類型：</label>
+          <select class="search__group__select" name="games" id="game_select">
+            <option value="">全部</option>
+            <option value="5PK">5PK</option>
+            <option value="7PK">7PK</option>
+            <option value="滿天星">滿天星</option>
+            <option value="百人幸運輪">百人幸運輪</option>
+            <option value="小瑪莉">小瑪莉</option>
+          </select>
+        </li>
+        <li>
+          <table class="content__table">
+            <thead class="content__table__thead">
+              <tr>
+                <th>日期</th>
+                <th>遊戲類型</th>
+                <th>房間</th>
+                <th>下注點數</th>
+                <th>贏得點數</th>
+                <th>會員輸贏</th>
+              </tr>
+            </thead>
+            <div class="content__table__tbodyBox">
+              <tbody class="content__table__tbody">
+                <tr>
+                  <td>2022-03-02</td>
+                  <td>AK滿天星</td>
+                  <td>1234</td>
+                  <td>1000.0000</td>
+                  <td>100.0000</td>
+                  <td>-900.0000</td>
+                </tr>
+                <tr>
+                  <td>2022-03-02</td>
+                  <td>AK滿天星</td>
+                  <td>1234</td>
+                  <td>1000.0000</td>
+                  <td>100.0000</td>
+                  <td>-900.0000</td>
+                </tr>
+                <tr>
+                  <td>2022-03-02</td>
+                  <td>AK滿天星</td>
+                  <td>1234</td>
+                  <td>1000.0000</td>
+                  <td>100.0000</td>
+                  <td>-900.0000</td>
+                </tr>
+                <tr>
+                  <td>2022-03-02</td>
+                  <td>AK滿天星</td>
+                  <td>1234</td>
+                  <td>1000.0000</td>
+                  <td>100.0000</td>
+                  <td>-900.0000</td>
+                </tr>
+                <tr>
+                  <td>2022-03-02</td>
+                  <td>AK滿天星</td>
+                  <td>1234</td>
+                  <td>1000.0000</td>
+                  <td>100.0000</td>
+                  <td>-900.0000</td>
+                </tr>
+                <tr>
+                  <td>2022-03-02</td>
+                  <td>AK滿天星</td>
+                  <td>1234</td>
+                  <td>1000.0000</td>
+                  <td>100.0000</td>
+                  <td>-900.0000</td>
+                </tr>
+                <tr>
+                  <td>2022-03-02</td>
+                  <td>AK滿天星</td>
+                  <td>1234</td>
+                  <td>1000.0000</td>
+                  <td>100.0000</td>
+                  <td>-900.0000</td>
+                </tr>
+                <tr>
+                  <td>2022-03-02</td>
+                  <td>AK滿天星</td>
+                  <td>1234</td>
+                  <td>1000.0000</td>
+                  <td>100.0000</td>
+                  <td>-900.0000</td>
+                </tr>
+                <tr>
+                  <td>2022-03-02</td>
+                  <td>AK滿天星</td>
+                  <td>1234</td>
+                  <td>1000.0000</td>
+                  <td>100.0000</td>
+                  <td>-900.0000</td>
+                </tr>
+                <tr>
+                  <td>2022-03-02</td>
+                  <td>AK滿天星</td>
+                  <td>1234</td>
+                  <td>1000.0000</td>
+                  <td>100.0000</td>
+                  <td>-900.0000</td>
+                </tr>
+                <tr>
+                  <td>2022-03-02</td>
+                  <td>AK滿天星</td>
+                  <td>1234</td>
+                  <td>1000.0000</td>
+                  <td>100.0000</td>
+                  <td>-900.0000</td>
+                </tr>
+                <tr>
+                  <td>2022-03-02</td>
+                  <td>AK滿天星</td>
+                  <td>1234</td>
+                  <td>1000.0000</td>
+                  <td>100.0000</td>
+                  <td>-900.0000</td>
+                </tr>
+                <tr>
+                  <td>2022-03-02</td>
+                  <td>AK滿天星</td>
+                  <td>1234</td>
+                  <td>1000.0000</td>
+                  <td>100.0000</td>
+                  <td>-900.0000</td>
+                </tr>
+                <tr>
+                  <td>2022-03-02</td>
+                  <td>AK滿天星</td>
+                  <td>1234</td>
+                  <td>1000.0000</td>
+                  <td>100.0000</td>
+                  <td>-900.0000</td>
+                </tr>
+                <tr>
+                  <td>2022-03-02</td>
+                  <td>AK滿天星</td>
+                  <td>1234</td>
+                  <td>1000.0000</td>
+                  <td>100.0000</td>
+                  <td>-900.0000</td>
+                </tr>
+                <tr>
+                  <td>2022-03-02</td>
+                  <td>AK滿天星</td>
+                  <td>1234</td>
+                  <td>1000.0000</td>
+                  <td>100.0000</td>
+                  <td>-900.0000</td>
+                </tr>
+              </tbody>
+            </div>
+          </table>
+        </li>
+        <li class="d-flex justify-content-space-between">
+          <p class="total__price">總筆數: 1000000</p>
+          <p class="total__price">總下注數: 12,345,678.0000</p>
+          <p class="total__price">總派彩: 12,345,678.0000</p>
+          <p class="total__price">會員輸贏: 1,234,567.0000</p>
+        </li>
+      </ul>
+    </div>
+    <script src="./assets/dist/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./assets/dist/js/all.js"></script>
+</body>
+</html>

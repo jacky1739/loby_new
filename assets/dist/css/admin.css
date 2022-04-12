@@ -1,0 +1,117 @@
+.nav {
+    background-image: url('../images/lobby/Lobby/平台svg/lobby_top_bar.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom 12%;
+    background-size: 200%;
+    height: .77rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: calc(.12rem + 3vh);
+}
+.logo {
+  height: .5rem;
+  width: auto;
+}
+.backBtn {
+  height: .7rem;
+  width: .7rem;
+}
+
+.main__box {
+    height: calc(100vh - .75rem);
+}
+.menu {
+    background-image: url('../images/lobby/Lobby/平台svg/list_leftbar.svg');
+    width: 20%;
+}
+.menu__icon {
+    height: .3rem;
+}
+.menu__idBg {
+    height: 1rem;
+    background-image: url('../images/lobby/Lobby/平台svg/lobby_player_id_bg.svg');
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu__id {
+    line-height: .3rem;
+    font-size: .25rem;
+    color: white;
+}
+
+.content {
+    padding: calc(.2rem + 3vh);
+    width: 80%;
+    background: #000;
+}
+.content__btn__group {
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: .3rem;
+}
+.content__table {
+    border: 1px solid #856E8F;
+    width: 100%;
+    height: calc(100vh - 3.5rem);
+    border-radius: 10px;
+    display: block;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.content__table__thead tr {
+    background: #533963;
+    width: 100%;
+}
+.content__table__thead tr th {
+    color: #FFE08B;
+    width: 10rem;
+    text-align: center;
+    padding: .15rem 0;
+    font-size: calc(.01rem + 2vh);
+    border-bottom: 2px solid #856E8F;
+    font-weight: lighter;
+}
+.content__table__tbody tr td {
+    text-align: center;
+    padding: .2rem;
+    /* font-size: calc(.01rem + 2vh); */
+}
+
+.search__group {
+    display: flex;
+    justify-content: space-between;
+    height: .4rem;
+    margin-bottom: .3rem;
+}
+.search__group__text {
+    margin-right: calc(.01rem + 1.5vh);
+    line-height: .4rem;
+    font-size: calc(.1rem + 1vh);
+}
+.search__group__select {
+    width: calc(1rem + 1vh);
+    height: .4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 0.15rem;
+    border-radius: 7px;
+    border: 1.5px solid rgb(133, 110, 143);
+    cursor: pointer;
+}
+.total__price {
+    font-size: calc(.1rem + 1vh);
+}
+
+.menu__betSearch:hover, .menu__accountList:hover {
+    filter: brightness(1.3);
+}
+.backBtn:hover, .content__searchbtn:hover, .content__betList2btn:hover, .content__betList1btn:hover {
+    filter: brightness(1.2);
+}
