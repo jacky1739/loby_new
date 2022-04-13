@@ -183,6 +183,13 @@ body {
   top: 0;
 }
 
+/* jacky */
+.personalCenter-btn {
+  position: absolute;
+  right: 10.5%;
+  top: 2%;
+}
+
 .system-btn {
   position: absolute;
   right: 2.5%;
@@ -269,19 +276,19 @@ body {
   transform: translateX(-50%);
 }
 
-.system-btn-image {
+.system-btn-image, .personalCenter-btn {
   -webkit-transition: all 200ms 0ms ease-in-out;
   transition: all 250ms 0ms ease-in-out;
 }
 
-.system-btn-image:hover {
+.system-btn-image:hover, .personalCenter-btn-image:hover {
   -webkit-transform: scale(0.95);
   transform: scale(0.95);
   cursor: pointer;
 }
 
 .system-btn-image:active,
-.system-btn-image:focus {
+.system-btn-image:focus, .personalCenter-btn-image:active, .personalCenter-btn-image:focus {
   filter: brightness(0.5);
 }
 

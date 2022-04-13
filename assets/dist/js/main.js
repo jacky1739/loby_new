@@ -92,6 +92,7 @@ function initSlick(){
       /** system btn */
       let systemBtnWidth = $('.nav-bar').width() * 0.047;
       $('.system-btn-image').css({ 'width' : systemBtnWidth + 'px' });
+      $('.personalCenter-btn-image').css({ 'width' : systemBtnWidth + 'px' });
 
       let fontSize = window.innerWidth > 900 ? 24 : 12;
       /** name & property */   
@@ -210,6 +211,7 @@ function initSlick(){
       /** system btn */
       let systemBtnWidth = $('.nav-bar').width() * 0.097;
       $('.system-btn-image').css({ 'width' : systemBtnWidth + 'px' });
+      $('.personalCenter-btn-image').css({ 'width' : systemBtnWidth + 'px' });
 
       setTimeout(() => {
          /** nav marquee */
@@ -235,7 +237,7 @@ function initSlick(){
 
     /** system page */
     let systemPageTop = $('.system-btn').position().top;
-    let systemPageRight = $('.system-btn').css('right');   
+    let systemPageRight = $('.system-btn').css('right');
     $('.system-page').css({ 'top' : systemPageTop + 'px', 'right' : systemPageRight, 'display' : 'block' });
 
 
