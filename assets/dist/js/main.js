@@ -26,6 +26,11 @@ $(document).ready(function(){
       msg = '<span class="msg">Hidden input value: ';
       $('.msg').html(msg + input + '</span>');
   }); 
+
+  $('.personalCenter-btn').click(function () {
+    console.log('click')
+    window.location.href = "admin.html"
+  })
 });
 
 function initSlick(){
@@ -104,6 +109,8 @@ function initSlick(){
       let propertyLeft = $(".personal-box-image").width() * 0.27;
       let accountTop = $(".personal-box-image").height() * atm;
       let personalBoxLeft = (window.innerWidth - $('.nav-bar').width()) / 2;
+      // let personalCenterBox = (window.innerWidth - $('.'))
+
       if(ratio > (1334/750)){        
         let sbt = $('.system-btn').position().top;
         $('.system-btn').css({ 'right' : (personalBoxLeft + sbt) + 'px' });
