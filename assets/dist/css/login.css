@@ -32,7 +32,8 @@
     height: auto;
 }
 .login__input {
-    background-color: rgba(0, 0, 0, .61);
+    /* background-color: rgba(0, 0, 0, .61); */
+    background-color: rgba(102, 102, 102, .6);
     border-radius: 15px;
     display: flex;
     justify-content: center;
