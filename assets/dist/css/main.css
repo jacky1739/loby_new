@@ -56,10 +56,10 @@ body {
   margin: 0px 30px;
 } */
 
-.slick-slide {
-  /* transition: all ease-in-out .3s; */
-  /* opacity: .2; */
-}
+/* .slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: .2;
+} */
 
 .slick-dots {
   bottom: -45px;

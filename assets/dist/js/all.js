@@ -1,10 +1,21 @@
 $(document).ready(function() {
-    console.log('hi')
+    
+    // datepicker--from
     $('#datepicker1').datepicker({ dateFormat: "yy-mm-dd" })
     $('#datepicker2').datepicker({ dateFormat: "yy-mm-dd" })
+    
+    // loginPage loading icon and errormessage
+    $('.loadingDiv').hide()
+    $('.login__errorMessage__word').hide()
+    
     $('.login__btn__submit').click(function() {
         console.log('click')
-        $('.login__errorMessage__word').addClass('d-none')
+        $('.loadingDiv').show()
+        $('.login__errorMessage__word').show()
+        setTimeout(function() {
+            $('.loadingDiv').hide()
+            $('.login__errorMessage__word').hide()
+        }, 3000)
     })
 })
 
