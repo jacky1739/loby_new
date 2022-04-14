@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     padding: calc(.12rem + 3vh);
+    border-bottom: 1px solid rgb(144, 132, 103);
 }
 .logo {
   height: .5rem;
@@ -48,6 +49,7 @@
     padding: calc(.2rem + 3vh);
     width: 80%;
     background: rgb(33, 33, 33);
+    border-left: 1px solid rgb(144, 132, 103);
 }
 .content__btn__group {
     justify-content: space-between;
