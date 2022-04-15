@@ -58,6 +58,11 @@
 ::-webkit-input-placeholder { /* Chrome, Safari */
     color: white;
 }
+::-moz-placeholder { /* Firefox 19+ */
+    color: white;
+    opacity: 1;
+}
+
 .login__errorMessage {
     text-align: center;
     width: 1.4rem;

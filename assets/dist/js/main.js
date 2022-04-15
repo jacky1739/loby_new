@@ -97,7 +97,9 @@ function initSlick(){
       /** system btn */
       let systemBtnWidth = $('.nav-bar').width() * 0.047;
       $('.system-btn-image').css({ 'width' : systemBtnWidth + 'px' });
+      /** personalCenter btn */
       $('.personalCenter-btn-image').css({ 'width' : systemBtnWidth + 'px' });
+      $('.personalCenter-btn-image').css({ 'height' : systemBtnWidth + 'px' });
 
       let fontSize = window.innerWidth > 900 ? 24 : 12;
       /** name & property */   
@@ -109,18 +111,24 @@ function initSlick(){
       let propertyLeft = $(".personal-box-image").width() * 0.27;
       let accountTop = $(".personal-box-image").height() * atm;
       let personalBoxLeft = (window.innerWidth - $('.nav-bar').width()) / 2;
-      // let personalCenterBox = (window.innerWidth - $('.'))
+
+      let personalCenterLeft = (window.innerWidth - $('.nav-bar').width());
 
       if(ratio > (1334/750)){        
         let sbt = $('.system-btn').position().top;
         $('.system-btn').css({ 'right' : (personalBoxLeft + sbt) + 'px' });
+
+        $('.personalCenter-btn').css({ 'right' : (personalBoxLeft + 100) + 'px' });
+
         $('.personal-box').css({ 'left' : personalBoxLeft + 'px', 'top' : '2.5px' });
         $(".game-menu-slider").css({ 'width' : ($('.main-background').width() * 0.9) + 'px' });      
         $(".personal-property").css({ 'top' : propertyTop + 'px', 'left' : propertyLeft + 'px', 'font-size' : fontSize + 'px' });
         $(".personal-account").css({ 'top' : accountTop + 'px', 'left' : propertyLeft + 'px', 'font-size' : fontSize + 'px' });
-       
+        // if(ratio > (2133/973)) {
+        //   $('.personalCenter-btn').css({ 'right' : (personalCenterLeft / 1.2) + 'px' });
+        // }
       }
-      else{               
+      else{
         $(".personal-property").css({ 'top' : propertyTop + 'px', 'left' : propertyLeft + 'px' });
         $(".personal-account").css({ 'top' : accountTop + 'px', 'left' : propertyLeft + 'px' });
       }
