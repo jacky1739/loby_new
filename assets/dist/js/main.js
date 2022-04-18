@@ -118,15 +118,12 @@ function initSlick(){
         let sbt = $('.system-btn').position().top;
         $('.system-btn').css({ 'right' : (personalBoxLeft + sbt) + 'px' });
 
-        $('.personalCenter-btn').css({ 'right' : (personalBoxLeft + 100) + 'px' });
+        $('.personalCenter-btn').css({ 'right' : (personalBoxLeft + (sbt * 11)) + 'px' });
 
         $('.personal-box').css({ 'left' : personalBoxLeft + 'px', 'top' : '2.5px' });
         $(".game-menu-slider").css({ 'width' : ($('.main-background').width() * 0.9) + 'px' });      
         $(".personal-property").css({ 'top' : propertyTop + 'px', 'left' : propertyLeft + 'px', 'font-size' : fontSize + 'px' });
         $(".personal-account").css({ 'top' : accountTop + 'px', 'left' : propertyLeft + 'px', 'font-size' : fontSize + 'px' });
-        // if(ratio > (2133/973)) {
-        //   $('.personalCenter-btn').css({ 'right' : (personalCenterLeft / 1.2) + 'px' });
-        // }
       }
       else{
         $(".personal-property").css({ 'top' : propertyTop + 'px', 'left' : propertyLeft + 'px' });
