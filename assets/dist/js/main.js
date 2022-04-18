@@ -112,8 +112,6 @@ function initSlick(){
       let accountTop = $(".personal-box-image").height() * atm;
       let personalBoxLeft = (window.innerWidth - $('.nav-bar').width()) / 2;
 
-      let personalCenterLeft = (window.innerWidth - $('.nav-bar').width());
-
       if(ratio > (1334/750)){        
         let sbt = $('.system-btn').position().top;
         $('.system-btn').css({ 'right' : (personalBoxLeft + sbt) + 'px' });
