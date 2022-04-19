@@ -26,11 +26,6 @@ $(document).ready(function(){
       msg = '<span class="msg">Hidden input value: ';
       $('.msg').html(msg + input + '</span>');
   }); 
-
-  $('.personalCenter-btn').click(function () {
-    console.log('click')
-    window.location.href = "admin.html"
-  })
 });
 
 function initSlick(){
@@ -116,7 +111,7 @@ function initSlick(){
         let sbt = $('.system-btn').position().top;
         $('.system-btn').css({ 'right' : (personalBoxLeft + sbt) + 'px' });
 
-        $('.personalCenter-btn').css({ 'right' : (personalBoxLeft + (sbt * 11)) + 'px' });
+        $('.personalCenter-btn').css({ 'right' : (personalBoxLeft + (sbt * 9)) + 'px' });
 
         $('.personal-box').css({ 'left' : personalBoxLeft + 'px', 'top' : '2.5px' });
         $(".game-menu-slider").css({ 'width' : ($('.main-background').width() * 0.9) + 'px' });      
