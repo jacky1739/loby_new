@@ -26,6 +26,11 @@ $(document).ready(function(){
       msg = '<span class="msg">Hidden input value: ';
       $('.msg').html(msg + input + '</span>');
   }); 
+
+  $('.personalCenter-btn').click(function () {
+    console.log('click')
+    window.location.href="admin.html"
+  })
 });
 
 function initSlick(){
