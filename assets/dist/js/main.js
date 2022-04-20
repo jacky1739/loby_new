@@ -102,8 +102,9 @@ function initSlick(){
       $('.personalCenter-btn-image').css({ 'height' : systemBtnWidth + 'px' });
 
       // let fontSize = window.innerWidth > 900 ? 24 : 12;
-      let innerHeight = window.innerHeight > 592 ? 24 : 12;
-      let fontSize = window.innerWidth > 900 ? innerHeight : 12;
+      let innerMin = window.innerHeight > 628 && window.innerHeight > 750 ? 32 : 16;
+      let innerHeight = window.innerHeight > 570 ? innerMin : 16;
+      let fontSize = window.innerWidth > 900 ? innerHeight : 16;
 
       /** name & property */   
       let ptlwm = window.innerWidth > 1334 ? 0.2 : 0.16;
@@ -151,12 +152,15 @@ function initSlick(){
         $('.game-selected-frame-top').css({ 'height' : (game_item_height*1.05) + 'px' });
         $('.game-selected-frame-bottom').css({ 'height' : (game_item_height*1.05) + 'px' });
       }, 500);  
-     
+
       /** footer marquee */
       let marqueeWidth = $('.footer-marquee-background').width();     
       let marqueeFontSize = window.innerWidth < 900? 10 : window.innerWidth * 0.0034 + 13.48;
-      let marqueeTop =  ratio > (1334/750) ? 97 : Math.abs((((1334/750)-ratio)*2.67) - 0.28) + 97;
-     
+      
+      // let marqueeTop =  ratio > (1334/750) ? 97 : Math.abs((((1334/750)-ratio)*2.67) - 0.28) + 97;
+      let marqueeMiddle = window.innerHeight < 572 ? 98 : 97;
+      let marqueeTop =  ratio > (1334/750) ? marqueeMiddle : Math.abs((((1334/750)-ratio)*2.67) - 0.28) + 97;
+
       if($('.marquee-box'))
 
       if(window.innerWidth < 900){
