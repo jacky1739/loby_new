@@ -101,7 +101,10 @@ function initSlick(){
       $('.personalCenter-btn-image').css({ 'width' : systemBtnWidth + 'px' });
       $('.personalCenter-btn-image').css({ 'height' : systemBtnWidth + 'px' });
 
-      let fontSize = window.innerWidth > 900 ? 24 : 12;
+      // let fontSize = window.innerWidth > 900 ? 24 : 12;
+      let innerHeight = window.innerHeight > 592 ? 24 : 12;
+      let fontSize = window.innerWidth > 900 ? innerHeight : 12;
+
       /** name & property */   
       let ptlwm = window.innerWidth > 1334 ? 0.2 : 0.16;
       let atlwm = window.innerWidth > 1334 ? 0.63 : 0.58;
