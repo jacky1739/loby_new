@@ -306,6 +306,10 @@ body {
   pointer-events: unset;
 }
 
+.unvisible {
+  opacity: 0;
+}
+
 .system-volume-bar {
   position: absolute;
   top: 47%;

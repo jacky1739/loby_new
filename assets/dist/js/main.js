@@ -5,6 +5,7 @@ $(document).ready(function(){
   $( ".system-btn" ).click(function() {
     $('.system-page').toggleClass('visible');
     $('.system-page-image').toggleClass('visible');
+    $('.personalCenter-btn').toggleClass('unvisible');
   });
   $(".slider").rangeslider();
 
